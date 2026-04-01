@@ -1,14 +1,64 @@
-# Track all your AI coding subscriptions in one place
+# OpenUsage CLI
 
-See your usage at a glance from your menu bar. No digging through dashboards.
+> **Based on [OpenUsage](https://github.com/robinebers/openusage)** by Robin Ebers (MIT License)
+> This project adds a CLI wrapper on top of the OpenUsage HTTP API.
 
-![OpenUsage Screenshot](screenshot.png)
+Command-line tool to check your AI coding subscription usage directly from the terminal.
 
-## Download
+## Install
 
-[**Download the latest release**](https://github.com/robinebers/openusage/releases/latest) (macOS, Apple Silicon & Intel)
+### Homebrew (Recommended)
 
-The app auto-updates. Install once and you're set.
+```bash
+brew tap devnoyo0123/tap
+brew install openusage-cli
+```
+
+### Manual
+
+```bash
+git clone https://github.com/devnoyo0123/openusage-cli.git
+cd openusage-cli
+bun install
+```
+
+## Usage
+
+> **Prerequisite:** The [OpenUsage](https://github.com/robinebers/openusage) app must be running.
+
+```bash
+openusage              # List all providers
+openusage list         # List all providers
+openusage get claude   # Get Claude usage details
+openusage get cursor   # Get Cursor usage details
+openusage status       # Check API connection
+openusage help         # Show help
+```
+
+### Example Output
+
+```
+📊 OpenUsage - All Providers
+
+📦 Claude
+   Plan: Pro
+   Session: [████████████████████] 100.0% (100/100)
+   └─ Resets in: 54m (4/1/2026, 9:00:00 PM)
+   Today: $21.14 · 97M tokens
+
+📦 Cursor
+   Plan: Pro
+   Total usage: [░░░░░░░░░░░░░░░░░░░░] 0.0% (0/100)
+   └─ Resets in: 638h 58m (4/28/2026)
+```
+
+## Supported Providers
+
+Claude, Codex, Copilot, Cursor, Factory, Gemini, JetBrains AI, Kimi, MiniMax, OpenCode Go, Perplexity, Windsurf, Z.ai, Amp
+
+## Download Desktop App
+
+[**Download OpenUsage app**](https://github.com/robinebers/openusage/releases/latest) (macOS, Apple Silicon & Intel)
 
 ## What It Does
 
