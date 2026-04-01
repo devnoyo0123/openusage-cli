@@ -27,12 +27,12 @@ bun install
 > **Prerequisite:** The [OpenUsage](https://github.com/robinebers/openusage) app must be running.
 
 ```bash
-openusage              # List all providers
-openusage list         # List all providers
-openusage get claude   # Get Claude usage details
-openusage get cursor   # Get Cursor usage details
-openusage status       # Check API connection
-openusage help         # Show help
+openusage-cli              # List all providers
+openusage-cli list         # List all providers
+openusage-cli get claude   # Get Claude usage details
+openusage-cli get cursor   # Get Cursor usage details
+openusage-cli status       # Check API connection
+openusage-cli help         # Show help
 ```
 
 ### Example Output
